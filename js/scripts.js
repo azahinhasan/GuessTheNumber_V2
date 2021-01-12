@@ -49,7 +49,7 @@ function hints1(){
 }
 function myFunction2() {  //next
    changeSelectedButtonColorDefault();
-   document.getElementById("buttonClick").disabled = false;
+   //document.getElementById("buttonClick").disabled = false;
    document.getElementById("buttonNext").disabled = true;
    document.getElementById("unknownNumber").innerHTML = "?";
    document.getElementById("hints").innerHTML = "";
@@ -83,13 +83,12 @@ function myFunction2() {  //next
    
  }
 
-
  function myFunction(yourNumber) { //click
    matchPlayed++;
    document.getElementById("matchPlayed").innerHTML = ('0' + matchPlayed).slice(-2);
 
    document.getElementById("buttonNext").disabled = false;
-   document.getElementById("buttonClick").disabled = true;
+  // document.getElementById("buttonClick").disabled = true;
    //var yourNumber = document.getElementById("yourNumber").value;
    if(yourNumber == randomNumber){
      
