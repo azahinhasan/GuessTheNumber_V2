@@ -203,12 +203,12 @@ function valueFORbuttons(){
 
    temp = randomNumberMinMax(randomNumber+1,randomNumber+2);
    carrayNumbers[1]=temp;
-   temp = randomNumberMinMax(randomNumber+3,randomNumber+5);
+   temp = randomNumber;
    carrayNumbers[3]=temp;
    temp = randomNumberMinMax(randomNumber-6,randomNumber-4);
    carrayNumbers[2]=temp;
-   temp = randomNumber;
-   carrayNumbers[4]=temp;
+   //temp = randomNumber;
+   //carrayNumbers[4]=temp;
 
    carrayNumbers.sort(() => Math.random() - 0.5)
 
@@ -222,8 +222,8 @@ function valueFORbuttons(){
    localStorage.setItem("button2",carrayNumbers[2]);
    document.getElementById("button3").innerHTML = carrayNumbers[3];
    localStorage.setItem("button3",carrayNumbers[3]);
-   document.getElementById("button4").innerHTML = carrayNumbers[4];
-   localStorage.setItem("button4",carrayNumbers[4]);
+   //document.getElementById("button4").innerHTML = carrayNumbers[4];
+   //localStorage.setItem("button4",carrayNumbers[4]);
 }
 
 
@@ -244,10 +244,10 @@ function valueOFbuttons(value){
    }else if(value == 3){
       changeSelectedButtonColor('button3');
       myFunction(localStorage.getItem('button3'));
-   }else if(value == 4){
+   }/*else if(value == 4){
       changeSelectedButtonColor('button4');
       myFunction(localStorage.getItem('button4'));
-   }
+   }*/
 
 }
 
@@ -283,7 +283,7 @@ function disibleOptionButtons(){
    document.getElementById("button1").disabled = true;
    document.getElementById("button2").disabled = true;
    document.getElementById("button3").disabled = true;
-   document.getElementById("button4").disabled = true;
+   //document.getElementById("button4").disabled = true;
 }
 
 function enableOptionButtons(){
@@ -291,7 +291,7 @@ function enableOptionButtons(){
    document.getElementById("button1").disabled = false;
    document.getElementById("button2").disabled = false;
    document.getElementById("button3").disabled = false;
-   document.getElementById("button4").disabled = false;
+   //document.getElementById("button4").disabled = false;
 }
 
 //let list = [1, 2, 3,4,5]
