@@ -84,6 +84,13 @@ h1:hover{
 	color: lightcoral;
 }
 
+
+#option_buttonTable{
+	border-collapse: collapse;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
 #unknownNumber{
 	font-size: 95px;
 	text-align: center;
@@ -98,7 +105,7 @@ h1:hover{
 	border-radius: 4px;
 	display: block;
     margin-left: auto;
-	margin-right: auto 
+	margin-right: auto ;
 	
   }
 
@@ -184,6 +191,23 @@ h1:after{
 	position: relative;
 	bottom: -10px;
   }
+
+
+.buttonOption{
+	border-radius: 4px;
+	background-color: #d6d5d5;
+	border: none;
+	color: balck;
+	text-align: center;
+	font-size: 24px;
+	padding: 20px;
+	width: 150px;
+    height: 70px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: 'Pirata One', cursive;
+}
 
 .button {
 	border-radius: 4px;

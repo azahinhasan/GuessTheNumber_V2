@@ -48,7 +48,7 @@ function hints1(){
    hints = "[ Hints:Number is bettween "+hintsMin+" and "+hintsMax+" ]";
 }
 function myFunction2() {  //next
-   
+   changeSelectedButtonColorDefault();
    document.getElementById("buttonClick").disabled = false;
    document.getElementById("buttonNext").disabled = true;
    document.getElementById("unknownNumber").innerHTML = "?";
@@ -251,6 +251,26 @@ function valueOFbuttons(value){
 
 }
 
+
+function changeSelectedButtonColorDefault(){
+   //document.getElementById("button").className.style.backgroundColor = 'black';
+
+   document.getElementById("button1").style.backgroundColor = '#d6d5d5';
+   document.getElementById("button1").style.color = 'black';
+   document.getElementById("button1").style.border = '2px solid #d6d5d5';
+
+   document.getElementById("button0").style.backgroundColor = '#d6d5d5';
+   document.getElementById("button0").style.color = 'black';
+   document.getElementById("button0").style.border = '2px solid #d6d5d5';
+
+   document.getElementById("button2").style.backgroundColor = '#d6d5d5';
+   document.getElementById("button2").style.color = 'black';
+   document.getElementById("button2").style.border = '2px solid #d6d5d5';
+
+   document.getElementById("button3").style.backgroundColor = '#d6d5d5';
+   document.getElementById("button3").style.color = 'black';
+   document.getElementById("button3").style.border = '2px solid #d6d5d5';
+}
 
 function changeSelectedButtonColor(value){
    document.getElementById(value).style.backgroundColor = 'Black';
