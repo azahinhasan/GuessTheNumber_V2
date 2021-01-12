@@ -53,7 +53,6 @@ function myFunction2() {  //next
    document.getElementById("buttonNext").disabled = true;
    document.getElementById("unknownNumber").innerHTML = "?";
    document.getElementById("hints").innerHTML = "";
-   valueFORbuttons();
    hintsButtonShow();
    
    if(guessNumber==0){
@@ -77,19 +76,21 @@ function myFunction2() {  //next
          }
    }
    hints1();
+   valueFORbuttons();
+   enableOptionButtons();
    ///////////////////////////////
    //document.getElementById("point").innerHTML = randomNumber;
    
  }
 
 
- function myFunction() { //click
+ function myFunction(yourNumber) { //click
    matchPlayed++;
    document.getElementById("matchPlayed").innerHTML = ('0' + matchPlayed).slice(-2);
 
    document.getElementById("buttonNext").disabled = false;
    document.getElementById("buttonClick").disabled = true;
-   var yourNumber = document.getElementById("yourNumber").value;
+   //var yourNumber = document.getElementById("yourNumber").value;
    if(yourNumber == randomNumber){
      
       document.getElementById("result").innerHTML = "!^.^!Right!^.^!";
@@ -214,10 +215,15 @@ function valueFORbuttons(){
 
 
    document.getElementById("button0").innerHTML = carrayNumbers[0];
+   localStorage.setItem("button0",carrayNumbers[0]);
    document.getElementById("button1").innerHTML = carrayNumbers[1];
+   localStorage.setItem("button1",carrayNumbers[1]);
    document.getElementById("button2").innerHTML = carrayNumbers[2];
+   localStorage.setItem("button2",carrayNumbers[2]);
    document.getElementById("button3").innerHTML = carrayNumbers[3];
+   localStorage.setItem("button3",carrayNumbers[3]);
    document.getElementById("button4").innerHTML = carrayNumbers[4];
+   localStorage.setItem("button4",carrayNumbers[4]);
 }
 
 
@@ -225,6 +231,47 @@ function valueFORbuttons(){
 
 function valueOFbuttons(value){
 
+   disibleOptionButtons();
+   if(value == 0){
+      changeSelectedButtonColor('button0');
+      myFunction(localStorage.getItem('button0'));
+   }else if(value == 1){
+      changeSelectedButtonColor('button1');
+      myFunction(localStorage.getItem('button1'));
+   }else if(value == 2){
+      changeSelectedButtonColor('button2');
+      myFunction(localStorage.getItem('button2'));
+   }else if(value == 3){
+      changeSelectedButtonColor('button3');
+      myFunction(localStorage.getItem('button3'));
+   }else if(value == 4){
+      changeSelectedButtonColor('button4');
+      myFunction(localStorage.getItem('button4'));
+   }
+
+}
+
+
+function changeSelectedButtonColor(value){
+   document.getElementById(value).style.backgroundColor = 'Black';
+   document.getElementById(value).style.color = '#d6d5d5';
+   document.getElementById(value).style.border = '2px solid #d6d5d5';
+}
+
+function disibleOptionButtons(){
+   document.getElementById("button0").disabled = true;
+   document.getElementById("button1").disabled = true;
+   document.getElementById("button2").disabled = true;
+   document.getElementById("button3").disabled = true;
+   document.getElementById("button4").disabled = true;
+}
+
+function enableOptionButtons(){
+   document.getElementById("button0").disabled = false;
+   document.getElementById("button1").disabled = false;
+   document.getElementById("button2").disabled = false;
+   document.getElementById("button3").disabled = false;
+   document.getElementById("button4").disabled = false;
 }
 
 //let list = [1, 2, 3,4,5]
