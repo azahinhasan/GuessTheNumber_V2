@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden; 
+	background-color: black;
+	color: white;
+	font-family: 'Pirata One', cursive;
+}
+
+h1{
+    text-align: center;
+    color: #d6d5d5;
+   
+}
+h1:hover{
+	animation: wiggle 0.6s;
+}
+#finalMassage{
+	text-align: center;
+	color: #d6d5d5;
+	position: relative;
+	top: 100px;
+
+}
+
+#finalMssage,#finalMssage2{
+	font-size: 50px;
+}
+
+#fontpageH{
+	text-align: center;
+	color: #d6d5d5;
+	position: relative;
+	bottom: -250px;
+	font-size: 52px;
+	
+}
+
+#fontpageH:hover{
+	animation: wiggle 0.6s;
+}
+
+#fontpageH2{
+	text-align: center;
+	color: #d6d5d5;
+	position: relative;
+	bottom: -250px;
+	font-size: 42px;
+	font-family: 'Pirata One', cursive;
+}
+
+
+#hints{
+	position: relative;
+	text-align: center;
+	left: 50px;
+	font-size: 20px;
+}
+#yourNumber {
+    width: 20%;
+    height: 80px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: #d6d5d5;
+	font-size: 26px;
+	resize: none;
+	text-align: center;
+	text-transform: initial;
+	font-family: 'Pirata One', cursive;
+
+  }
+
+#result{
+	font-size: 30px;
+	position: relative;
+	top: -20px;
+	color: lightcoral;
+}
+
+#unknownNumber{
+	font-size: 95px;
+	text-align: center;
+	left: 0%;
+	position: relative;
+	background-color: #d6d5d5;
+	color: black;
+	border: 3px solid white;
+	width: 13%;
+	height: 130px;
+	padding: 12px 20px;
+	border-radius: 4px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto 
+	
+  }
+
+  #inputOutput{
+	display: block;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 25px;
+    font-size: 18px
+  }
+
+
+  #pointsLive{
+	display: block;
+	position: relative;
+	font-size: 30px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	float:right;
+	right: 50px;
+	bottom:-50px;
+
+  }
+
+  #emoji{
+	  font-size: 100px;
+  }
+
+
+
+  @keyframes example {
+	0%   {color: rgb(86, 150, 158);}
+	25%  {color: rgb(10, 147, 156);}
+	50%  {color: rgb(167, 42, 199);}
+	100% {color: rgb(126, 128, 11);}
+	
+  }
+
+
+
+h1:before{
+	height: 55px;
+	width: 7px;
+	left:10px;
+	bottom: 5px;
+	border-radius: 7px;
+}
+h1:after{
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	bottom: 65px;
+	left:10px;
+}
+
+@keyframes wiggle{
+	25%{
+		transform: scale(0.8,1.3);
+	}
+	50%{
+		transform: scale(1.1,0.8);
+	}
+	75%{
+		transform: scale(0.7,1.2);
+	}
+}
+
+
+.buttonHints{
+	border-radius: 4px;
+	background-color: black;
+	border: none;
+	color: balck;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	width: 100px;
+    height:40px;
+	margin: 5px;
+	color: #d6d5d5;
+	border: 2px solid #d6d5d5;
+	position: relative;
+	bottom: -10px;
+  }
+
+.button {
+	border-radius: 4px;
+	background-color: #d6d5d5;
+	border: none;
+	color: balck;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 380px;
+    height: 70px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: 'Pirata One', cursive;
+	
+  }
+
+  #buttonStart {
+	text-align: center;
+	position: relative;
+	bottom: -200px;
+	font-size: 35px;
+	width: 280px;
+    height: 100px;	
+  }
+
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.3s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover{
+	background-color: black;
+	color: #d6d5d5;
+	border: 2px solid  #d6d5d5;
+  }
+  
+
+  .button:hover span:after {
+	  
+	opacity: 1;
+	right: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.overlay_flight_traveldil {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay_flight_traveldil:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  .popup_flight_travlDil {
+	margin: 70px auto;
+	padding: 20px;
+	background: #e9e9e9;
+	border-radius: 5px;
+	width: 28%;
+	height: 40%;
+	position: relative;
+	transition: all 2s ease-in-out;
+	font-family: 'Roboto', sans-serif;
+  }
+  .popup_flight_travlDil .close_flight_travelDl {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	
+  }
+  .popup_flight_travlDil{
+	color: black;
+  }
+  .popup_flight_travlDil .content_flightht_travel_dil {
+	max-height: 100%;
+	overflow: auto;
+	font: 20px;
+  }
+  
+  #Instruction{
+	  color: black;
+	  position: relative;
+	  top: 130px;
+  }
+
+  #Instruction:hover{
+	color: #d6d5d5;
+  }

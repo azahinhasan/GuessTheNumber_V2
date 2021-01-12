@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<title>Download Calculator</title>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body >
+<div id="1stPart">
+<h1><u>Guess The Number</u></h1>
+    <div id = "inputOutput">
+        <span id="result"></span>
+        <br>
+        <br>
+        <dev class="mainDev">
+        <span id="unknownNumber">?</span>
+        <br><br>
+        <br>
+        <textarea type="text" id="yourNumber" name="size" placeholder= "Input Your Guess"></textarea>
+        <br>
+        <br>
+        <span id="hints"></span> 
+        <button  onclick="hintsButton()" id="hintsButton" class="buttonHints"><span>Hints</span></button>
+        <br>
+        <br>
+        <br>
+        <button  onclick="myFunction()" id="buttonClick" class="button"><span>Click</span></button>
+        <br>
+        <button  onclick="myFunction2()" id="buttonNext" class="button"><span>Next</span></button>
+    </div>
+
+<br>
+
+
+<div id= "option button">
+    <table>
+        <tr>
+            <td>
+                <button  onclick="valueOFbuttons(0)" id="button0" class="button"><span>Button1</span></button>
+            </td>
+            <td>
+                <button  onclick="valueOFbuttons(1)" id="button1" class="button"><span>Button1</span></button>
+            </td>
+            <td>
+                <button  onclick="valueOFbuttons(2)" id="button2" class="button"><span>Button1</span></button>
+            </td>
+            <td>
+                <button  onclick="valueOFbuttons(3)" id="button3" class="button"><span>Button1</span></button>
+            </td>
+            <td>
+                <button  onclick="valueOFbuttons(4)" id="button4" class="button"><span>Button1</span></button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="pointsLive">
+    <table>
+        <tr>
+            <td>
+                <span id="matchPlayed"></span>
+            </td>
+            <td>
+                <span>: Match Played</span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span id="point"></span>
+            </td>
+            <td>
+                <span>: Point</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span id="life"></span>
+            </td>
+            <td>
+                <span>: Life</span> 
+            </td>
+        </tr>
+    </table>
+
+     
+</div>
+
+<a class="button" id = "Instruction" href="#popup_flight_travlDil3">Instruction</a>
+<div id="popup_flight_travlDil3" class="overlay_flight_traveldil">
+    <div class="popup_flight_travlDil">
+        <h2>Instruction</h2>
+        <a class="close_flight_travelDl" href="#">&times;</a>
+        <div class="content_flightht_travel_dil">
+            <p> > You Have to find Out What is the Number at '?'. 🤓</p>
+            <p> > If You cann't Guess.Don't worry.There is a Hint Button for You. 😉</p>
+            <p> > There gonna be 5 Live. If All of Them are Gone. Game Over. 😞</p>
+            <p> > For each Right Guess You will get +5. &#128516</p>
+            <p> > Maximum Point is 30.If you got 30.You Win. &#128525 </p>
+            <p> > Press Next If you done one. 🤡 </p>
+            <p> > If You think This Game is All about Luck. You are Wrong Homy. 🤗 </p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div id="2ndPart">
+    <h1><u>Guess The Number</u></h1>
+    <div id = "finalMassage">
+        
+        <div id="finalMssage">?</div>
+        <div id="finalMssage2">?</div>
+        <div id="emoji">?</div>
+        <a href="gamePage.html"><button id="buttonNext" class="button"><span>Play Again?</span></button></a>
+    
+    </div>
+</div>
+
+<!--<div id ="note"><span id ="ps">[Contacts Me]</span><br><br>
+
+<img src = "img/mail.png" height="42px" onclick="copyEmail('azahinhasan@gmail.com')"></img>
+
+<spn id="temp">--------</spn>
+<a href="#"></a><img src="img/inst.png" width="40px"></a><spn id="temp">--------</spn>
+<a href="https://www.facebook.com/a.h.zahin/"  target="_blank"><img src="img/fb.png"  width="42px" ></a> 
+
+</div>-->
+<script src="js/scripts.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
