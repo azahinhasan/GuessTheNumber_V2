@@ -1,4 +1,4 @@
-# GuessTheNumber
+# GuessTheNumber_V2
 
 
 ### Read Instruction before playing
