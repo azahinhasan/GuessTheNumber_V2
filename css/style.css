@@ -270,19 +270,6 @@ h1:after{
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 .overlay_flight_traveldil {
 	position: fixed;
@@ -305,7 +292,7 @@ h1:after{
 	background: #e9e9e9;
 	border-radius: 5px;
 	width: 28%;
-	height: 40%;		
+	height: 650px;		
 	position: relative;
 	transition: all 2s ease-in-out;
 	font-family: 'Roboto', sans-serif;

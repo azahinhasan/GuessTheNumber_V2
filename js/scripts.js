@@ -14,7 +14,7 @@ var hintsMin = hintsMax = 0;
 var valueForLastPage = 0;
 var onloadDecision = 0;
 var carrayNumbers=new Array(5);
-
+var hintsPenalty = 0;
 
 
 
@@ -79,6 +79,7 @@ function myFunction2() {  //next
             i = 0;
          }
    }
+   hintsPenalty=0;
    hints1();
    valueFORbuttons();
    enableOptionButtons();
@@ -97,20 +98,21 @@ function myFunction2() {  //next
    if(yourNumber == randomNumber){
      
       document.getElementById("result").innerHTML = "!^.^!Right!^.^!";
-      points=points+5;
+      points=points+5+hintsPenalty;
       
    }else{
       document.getElementById("result").innerHTML = "!T.T!Wrong!T.T!";
-      
+      points=points+hintsPenalty;
       life--;
    }
 
    if(points >= 30){
       finalPageAction(1);
-   }else if(life < 0){
+   }else if(life < 0 || points < -10){
       finalPageAction(2);
       valueForLastPage=2;
    }
+   hintsPenalty=0;
    document.getElementById("unknownNumber").innerHTML = randomNumber;
    lifePoints();
  }
@@ -140,6 +142,7 @@ function hintsButton(){
    //document.getElementById("hintsButton").style.display = "none";
    document.getElementById("hintsButton").style.visibility  = "hidden";
    document.getElementById("hints").innerHTML = hints;
+   hintsPenalty = -3;
 }
 
 function hintsButtonShow(){
