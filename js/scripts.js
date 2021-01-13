@@ -15,7 +15,11 @@ var valueForLastPage = 0;
 var onloadDecision = 0;
 var carrayNumbers=new Array(5);
 
-document.getElementById("2ndPart").style.visibility  = "hidden";
+
+
+
+//document.getElementById("2ndPart").style.visibility  = "hidden";
+document.getElementById("2ndPart").style.display  = "none";
 
 window.onload = function() {
    const storeValue = localStorage.getItem('storeValue');
@@ -102,9 +106,9 @@ function myFunction2() {  //next
    }
 
    if(points >= 30){
-      finalPageActon(1);
+      finalPageAction(1);
    }else if(life < 0){
-      finalPageActon(2);
+      finalPageAction(2);
       valueForLastPage=2;
    }
    document.getElementById("unknownNumber").innerHTML = randomNumber;
@@ -144,12 +148,14 @@ function hintsButtonShow(){
    document.getElementById("hints").innerHTML = "";
 }
 
-function finalPageActon(value){
+function finalPageAction(value){
 
    localStorage.setItem("storeValue",1);
    document.getElementById("1stPart").style.display  = "none";
    document.getElementById("hintsButton").style.display  = "none";
-   document.getElementById("2ndPart").style.visibility = "visible";
+  // document.getElementById("2ndPart").style.visibility = "visible";
+   document.getElementById("2ndPart").style.display  = "block";
+
 
    document.getElementById("life").innerHTML = value;
    if(value == 1){
@@ -161,10 +167,6 @@ function finalPageActon(value){
    }else if(value == 2){
       //onloadDecision = 1;
       //window.location.href = "finalPageLost.html";
-     
-      
-      
-      
       //window.open("finalPage.html","mypopup","width=500,height=300") //pop up window
       // popup.document.getElementById("player").someFunction();
       document.getElementById("finalMssage").innerHTML = "You Lose!!!!!";
@@ -175,27 +177,14 @@ function finalPageActon(value){
       //window.open('https://javascript.info');
       //document.getElementById("finalMssage").innerHTML = "You Lose!!!!!";
    }
-   
-   /*function a(valueForLastPage){
-      if(valueForLastPage == 1){
-         document.getElementById("finalMssage").innerHTML = "You Won!!!!!";
-         document.getElementById("finalMssage2").innerHTML = "Congratulation!";
-      }else if(valueForLastPage == 2){
-         document.getElementById("finalMssage").innerHTML = "You Lose!!!!!";
-         document.getElementById("finalMssage2").innerHTML = "Game Over!";  
-         //window.location.href = "http://www.w3schools.com";   
-      }
-   }*/
+
 }
 
 
 
 function valueFORbuttons(){
 
-   document.getElementById("hints").innerHTML = 'carrayNumbers';
   //hintsMin = randomNumberMinMax(randomNumber-2,randomNumber);
-   
-
    temp = randomNumberMinMax(randomNumber-3,randomNumber-1);
    carrayNumbers[0]=temp;
    //document.getElementById("button0").innerHTML = carrayNumbers[0];
