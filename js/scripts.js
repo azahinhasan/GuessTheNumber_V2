@@ -30,7 +30,7 @@ window.onload = function() {
       document.getElementById("buttonNext").disabled = true;
       document.getElementById("matchPlayed").innerHTML = '00';
       lifePoints();
-      //window.localStorage.removeItem('storeValue');
+      window.localStorage.removeItem('storeValue');
    }else{
       window.location.href = "index.html";
    }
